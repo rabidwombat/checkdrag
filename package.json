@@ -1,0 +1,13 @@
+{
+  "name": "checkdrag",
+  "version": "0.1.0",
+  "description": "Standalone project to implement checkdrag across elements.",
+  "main": "checkdrag.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "checkdrag"
+  ],
+  "author": "rabidwombat"
+}
