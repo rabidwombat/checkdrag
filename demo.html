@@ -1,9 +1,9 @@
 <html>
   <head>
-    <script src="checkdrag.js"></script>
+    <script src="lib/checkdrag.js"></script>
   </head>
   <body>
-    <ul>
+    <ul class="first">
       <li><input type="checkbox"/> Thing</li>
       <li><input type="checkbox"/> Thing</li>
       <li><input type="checkbox"/> Thing</li>
@@ -12,9 +12,19 @@
       <li><input type="checkbox"/> Thing</li>
     </ul>
 
+    <ul class="second">
+      <li><input type="checkbox"/> Thing</li>
+      <li><input type="checkbox"/> Thing</li>
+      <li><input type="checkbox"/> Thing</li>
+      <li><input type="checkbox"/> Thing</li>
+      <li><input type="checkbox"/> Thing</li>
+      <li><input type="checkbox"/> Thing</li>
+    </ul>
     <script>
-      var allChecks = document.querySelectorAll('input[type=checkbox]');
-      checkdrag(allChecks);
+      var firstChecks = document.querySelectorAll('.first input[type=checkbox]');
+      var secondChecks = document.querySelectorAll('.second input[type=checkbox]');
+      new checkdrag(firstChecks);
+      new checkdrag(secondChecks);
     </script>
   </body>
 </html>
